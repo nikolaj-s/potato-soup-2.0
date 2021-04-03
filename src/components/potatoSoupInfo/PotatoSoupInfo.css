@@ -1,0 +1,66 @@
+.potato-soup-info-container {
+    height: 700px;
+    width: 38%;
+    background: url("https://res.cloudinary.com/drlkgoter/image/upload/v1617312631/potato-soup-2.0/potato-soup_vkiwlo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: white;
+    position: relative;
+}
+.inner-potato-soup-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+}
+
+.inner-potato-soup-container h2,
+.inner-potato-soup-container li {
+    margin-left: 2rem;
+}
+
+.inner-potato-soup-container h2 {
+    font-size: 2rem;
+}
+
+.inner-potato-soup-container li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+}
+
+.soup-container {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+
+}
+.soup-container:hover {
+    background-color: rgb(129, 62, 62);
+}
+
+.soup-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.saved-image-container {
+    width: 100%;
+    height: 250px;
+
+}
+
+.saved-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,119 @@
+
+.outer-saved-images-container {
+    width: 41%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    box-shadow: 10px 10px 35px black;
+    border-right: solid rgb(0, 0, 0) 5px;
+    z-index: 1000;
+}
+
+.saved-image-array-container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+    left: 0;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.saved-image-array-container h2 {
+    color: white;
+    font-size: 2rem;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.saved-image-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.close-saved-menu-button {
+    height: 100%;
+    width: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.close-saved-menu-button:hover {
+    background-color: rgb(129, 62, 62);
+}
+.close-saved-menu-button svg {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+.inner-saved-images-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 110px;
+    align-items: center;
+}
+
+.saved-image-container {
+    width: 95%;
+    height: 450px;
+    margin: 0.5rem 0;
+    animation: fadeIn 0.4s forwards linear; 
+}
+
+.saved-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.download-button-container {
+    position: absolute;
+    bottom:1rem;
+    right:1rem;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.download-button-container:hover {
+    background-color: rgb(129, 62, 62);
+}
+
+.download-button-container svg{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}

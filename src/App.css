@@ -3,26 +3,38 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(22, 22, 22);
+  background-color: rgba(5, 24, 29, 0.692);
   box-sizing: border-box;
   font-family: 'Syne Mono', sans-serif;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
 }
-
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
 header {
   position: fixed;
   top: 0;
   left: 0;
   margin: 0;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   flex-shrink: 0;
   min-height: 82px;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.11388305322128855) 100%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 100%);
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 82px;
   align-items: center;
+  z-index: 999;
 }
 header h1 {
   color: white;
@@ -45,7 +57,7 @@ header span {
 .input-container input {
   object-fit: cover;
   width: 100%;
-  height: 98%;
+  height: 100%;
   font-size: 2rem;
   margin-right: 1rem;
   padding: 0 0.3rem;
@@ -53,19 +65,42 @@ header span {
   background: none;
   font-family: "Syne Mono", sans-serif;
   outline: none;
+  border: none;
+  border-left: solid white 5px;
+  padding-left: 2rem;
 }
 
 header button {
   height: 100%;
   width: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-right: 1.2rem;
+  padding-left: 1rem;
+}
+header button:hover {
+  background-color: rgb(129, 62, 62);
 }
 
 .image-array-container {
-  width: 100%;
+  width: 60%;
   height: 100%;
-  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  min-height: 800px;
 }
 
+
+.outer-container {
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  width: 98%;
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+}
